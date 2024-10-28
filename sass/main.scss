@@ -18,6 +18,10 @@ body {
     font-family: "Lexend Deca", serif;
 }
 
+main {
+    overflow-x: hidden;
+}
+
 header {
     padding: 1.27rem 2rem;
 }
@@ -121,23 +125,17 @@ button {
     }
 }
 
-.info {
+.information {
+    margin-top: 7.45rem;
+    padding: 0 2rem;
     display: flex;
     flex-direction: column;
-    padding: 0 2rem;
-    text-align: center;
-    margin-top: 7.4rem;
-    row-gap: 7.4rem;
+    gap: 7.4rem;
+}
 
-    .img-container {
-        margin-bottom: 3.4rem;
-        img {
-            width: 100%;
-            box-sizing: border-box;
-            border-radius: 50%;
-        }
-    }
-    
+/* styles for the text for ad/about scoot */
+.info { // this class is what contatins the text
+    text-align: center;
 
     h3 {
         font-size: 2rem;
@@ -152,15 +150,56 @@ button {
         color: c.$dimGrey;
         margin: 2rem 0;
     }
+
+
+}
+
+/* styles for the imgs for info/about scoot */
+.img-container {
+    margin-bottom: 3.4rem;
+    position: relative;
+
+    .img-info img {
+        width: 100%;
+        border-radius: 50%;
+    }
+
+    .pattern {
+        position: absolute;
+    }
+
+}
+
+.telemetry {
+    .pattern {
+        top: 51.9%;
+        left: -1.9%;
+    }
+}
+
+.city .img-container {
+    .pattern {
+        top: -2.5%;
+        right: 24%;
+    }
+}
+
+.payments .img-container {
+    .pattern {
+        top: -0.5%;
+        left: 40%;
+    }
 }
 
 footer {
     margin-top: 7.4rem;
     text-align: center;
+    overflow-x: hidden;
 
     .sign-up {
-        background: c.$darkNavy;
-        padding: 5.6rem 2rem 5rem;
+        background: rgb(73, 85, 103);
+        padding: 5.6rem 2rem 5.2rem;
+        position: relative;
         h3 {
             font-size: 2rem;
             letter-spacing: -1.43px;
@@ -169,10 +208,17 @@ footer {
             margin-bottom: 2.5rem;
         }
 
+        .pattern{
+            position: absolute;
+            top: 50.8%;
+            right: -44%;
+        }
+
         .stores {
             display: flex;
             justify-content: center;
             column-gap: 1rem;
+            
             .app-store img {
                 width: 113.57px;
                 height: 40px;
@@ -186,10 +232,34 @@ footer {
     }
 
     .footer-nav {
-        .logo img {
-            fill: rgba(255, 255, 255, 1);
-        }
         background: rgba(51, 58, 68, 1);
+        padding: 4rem 0;
+
+        .links {
+            margin: 2.3rem 0 5.35rem;
+            ul {
+                display: flex;
+                flex-direction: column;
+                row-gap: 1rem;
+                list-style: none;
+                padding: 0;
+            }
+
+            a, a:visited {
+                font-family: "Space Mono", serif;
+                color: c.$dimGrey;
+                font-size: 0.938rem;
+                line-height: 25px;
+                text-decoration: none;
+            }
+        }
+
+        .socials {
+            display: flex;
+            margin: 0 auto;
+            justify-content: space-between;
+            width: 120px;
+        }
     }
 }
 

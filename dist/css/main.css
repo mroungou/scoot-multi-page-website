@@ -14,6 +14,10 @@ body {
   font-family: "Lexend Deca", serif;
 }
 
+main {
+  overflow-x: hidden;
+}
+
 header {
   padding: 1.27rem 2rem;
 }
@@ -107,21 +111,17 @@ button {
   color: rgb(147, 156, 170);
 }
 
-.info {
+.information {
+  margin-top: 7.45rem;
+  padding: 0 2rem;
   display: flex;
   flex-direction: column;
-  padding: 0 2rem;
+  gap: 7.4rem;
+}
+
+/* styles for the text for ad/about scoot */
+.info {
   text-align: center;
-  margin-top: 7.4rem;
-  row-gap: 7.4rem;
-}
-.info .img-container {
-  margin-bottom: 3.4rem;
-}
-.info .img-container img {
-  width: 100%;
-  box-sizing: border-box;
-  border-radius: 50%;
 }
 .info h3 {
   font-size: 2rem;
@@ -136,13 +136,43 @@ button {
   margin: 2rem 0;
 }
 
+/* styles for the imgs for info/about scoot */
+.img-container {
+  margin-bottom: 3.4rem;
+  position: relative;
+}
+.img-container .img-info img {
+  width: 100%;
+  border-radius: 50%;
+}
+.img-container .pattern {
+  position: absolute;
+}
+
+.telemetry .pattern {
+  top: 51.9%;
+  left: -1.9%;
+}
+
+.city .img-container .pattern {
+  top: -2.5%;
+  right: 24%;
+}
+
+.payments .img-container .pattern {
+  top: -0.5%;
+  left: 40%;
+}
+
 footer {
   margin-top: 7.4rem;
   text-align: center;
+  overflow-x: hidden;
 }
 footer .sign-up {
   background: rgb(73, 85, 103);
-  padding: 5.6rem 2rem 5rem;
+  padding: 5.6rem 2rem 5.2rem;
+  position: relative;
 }
 footer .sign-up h3 {
   font-size: 2rem;
@@ -150,6 +180,11 @@ footer .sign-up h3 {
   line-height: 32px;
   color: rgb(255, 255, 255);
   margin-bottom: 2.5rem;
+}
+footer .sign-up .pattern {
+  position: absolute;
+  top: 50.8%;
+  right: -44%;
 }
 footer .sign-up .stores {
   display: flex;
@@ -167,7 +202,28 @@ footer .sign-up .stores .play-store img {
 }
 footer .footer-nav {
   background: rgb(51, 58, 68);
+  padding: 4rem 0;
 }
-footer .footer-nav .logo img {
-  fill: rgb(255, 255, 255);
+footer .footer-nav .links {
+  margin: 2.3rem 0 5.35rem;
+}
+footer .footer-nav .links ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  list-style: none;
+  padding: 0;
+}
+footer .footer-nav .links a, footer .footer-nav .links a:visited {
+  font-family: "Space Mono", serif;
+  color: rgb(147, 156, 170);
+  font-size: 0.938rem;
+  line-height: 25px;
+  text-decoration: none;
+}
+footer .footer-nav .socials {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  width: 120px;
 }/*# sourceMappingURL=main.css.map */
