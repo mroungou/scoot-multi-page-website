@@ -1,6 +1,7 @@
 @use 'variables' as v;
 @use 'colors' as c;
 @use 'fonts';
+@use 'about';
 
 * {
     // removing all margins at the beginning for more control
@@ -60,14 +61,11 @@ nav {
     text-align: center;
     background-image: url('../../assets/images/home-hero-mobile.jpg');
     padding: 7.2rem 2rem 11.2rem;
-    color: rgba(255, 255, 255, 1);
+    color: c.$white;
     position: relative;
 
     h1 {
-        font-size: 2.5rem;
-        letter-spacing: -1.79px;
-        line-height: 40px;
-        font-weight: 700;
+        @include v.header1;
     }
 
     p {
@@ -119,9 +117,7 @@ button {
     }
 
     p {
-        line-height: 25px;
-        font-size: .938rem;
-        color: c.$dimGrey;
+        @include v.paragraphs;
     }
 }
 
@@ -145,10 +141,8 @@ button {
     }
 
     p {
-        font-size: 0.938rem;
-        line-height: 25px;
-        color: c.$dimGrey;
         margin: 2rem 0;
+        @include v.paragraphs;
     }
 
 
@@ -233,7 +227,7 @@ footer {
 
     .footer-nav {
         background: rgba(51, 58, 68, 1);
-        padding: 4rem 0;
+        padding: 4rem 0 5.5rem;
 
         .links {
             margin: 2.3rem 0 5.35rem;

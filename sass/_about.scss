@@ -1,0 +1,28 @@
+@use 'colors' as c;
+@use 'variables' as v;
+
+.about-hero {
+    background-image: url('../../assets/images/about-hero-mobile.jpg');
+    text-align: center;
+    padding: 3.78rem 2rem;
+
+    h1 {
+        @include v.header1;
+        color: c.$white;
+    }
+}
+
+.about {
+    margin-top: 4rem;
+    padding: 0 2rem;
+    text-align: center;
+
+    h2 {
+        @include v.header2;
+    }
+
+    p {
+        @include v.paragraphs;
+        margin: 2rem 0;
+    }
+}

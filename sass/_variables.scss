@@ -1,2 +1,22 @@
 @use 'colors' as c;
-@use 'fonts'
+@use 'fonts';
+
+@mixin header1 {
+    font-size: 2.5rem;
+    letter-spacing: -1.79px;
+    line-height: 40px;
+    font-weight: 700;
+}
+
+@mixin header2 {
+    font-size: 2rem;
+    line-height: 32px;
+    letter-spacing: -1.43px;
+    font-weight: 700;
+}
+
+@mixin paragraphs {
+    font-size: 0.938rem;
+    line-height: 25px;
+    color: c.$dimGrey;
+}
