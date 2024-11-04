@@ -13,9 +13,12 @@
 }
 
 .about {
-  margin-top: 4rem;
+  margin-top: 4.4rem;
   padding: 0 2rem;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5.4rem;
 }
 .about h2 {
   font-size: 2rem;
@@ -28,6 +31,136 @@
   line-height: 25px;
   color: rgb(147, 156, 170);
   margin: 2rem 0;
+}
+
+.mobility .pattern {
+  top: 41%;
+  left: -2%;
+}
+
+.urban-living .pattern {
+  top: -2.3%;
+  left: -43.8%;
+}
+
+.values-section {
+  text-align: center;
+  padding: 0 2rem;
+  margin-top: 5.45rem;
+}
+.values-section h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -1.43px;
+}
+.values-section h4 {
+  line-height: 28px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: rgb(73, 85, 103);
+}
+.values-section p {
+  margin-top: 1.688rem;
+  font-size: 0.938rem;
+  line-height: 25px;
+  color: rgb(147, 156, 170);
+}
+.values-section .value {
+  margin-top: 3.95rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 3.5rem;
+}
+.values-section .img-container {
+  margin-bottom: 3.85rem;
+}
+.values-section .img-container img {
+  border-radius: 50%;
+}
+.values-section .num {
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: -1.07px;
+  line-height: 28px;
+  color: rgb(73, 85, 103);
+  font-family: "Space Mono", serif;
+  background: rgb(252, 183, 43);
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 35%;
+  top: 79%;
+}
+
+.faq-section {
+  margin-top: 9rem;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
+}
+.faq-section h2 {
+  font-size: 2rem;
+  line-height: 32px;
+  letter-spacing: -1.43px;
+  font-weight: 700;
+  text-align: center;
+}
+.faq-section h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: -1.07px;
+  color: rgb(73, 85, 103);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.faq-section p {
+  font-size: 0.938rem;
+  line-height: 25px;
+  color: rgb(73, 85, 103);
+  margin-top: 1.3rem;
+}
+
+.faq {
+  padding: 1.844rem 1.644rem;
+  background: rgb(242, 245, 249);
+}
+.faq button {
+  display: flex;
+  align-items: center;
+  background: none;
+  color: rgb(73, 85, 103);
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-align: left;
+  width: 100%;
+  letter-spacing: -0.8px;
+  justify-content: space-between;
+}
+.faq button .text {
+  width: 219px;
+}
+.faq .panel {
+  display: none;
+  padding: 0 0.244rem;
+}
+
+.how-faq .faq:not(:last-child),
+.safe-driving .faq:not(:last-child) {
+  margin-bottom: 1.1rem;
+}
+
+.active .panel {
+  display: block;
+}
+.active img {
+  transform: rotate(180deg);
 }
 
 * {
