@@ -47,17 +47,11 @@
     margin-top: 5.45rem;
 
     h3 {
-        font-size: 2rem;
-        font-weight: 700;
-        line-height: 32px;
-        letter-spacing: -1.43px;
+      @include v.header3;
     }
 
     h4 {
-        line-height: 28px;
-        font-size: 1.5rem;
-        font-weight: 700;
-        color: c.$darkNavy;
+        @include v.header4;
     }
 
     p {
@@ -121,7 +115,7 @@
         letter-spacing: -1.07px;
         color: c.$darkNavy;
         text-align: center;
-        margin-bottom: 2rem;
+        margin-bottom: 2.5rem;
     }
     
     p {
@@ -133,7 +127,7 @@
 }
 
 .faq {
-    padding: 1.844rem 1.644rem;
+    padding: 1.195rem 1.644rem;
     background: rgba(242, 245, 249, 1);
 
     button {
@@ -154,21 +148,19 @@
     }
 
     .panel {
-        display: none;
         padding: 0 .244rem;
+        max-height: 0;
+        transition: max-height 0.5s ease-in-out;
+        overflow: hidden;
     }
 }
 
 .how-faq .faq:not(:last-child),
 .safe-driving .faq:not(:last-child) {
-    margin-bottom: 1.1rem;
+    margin-bottom: 1rem;
 }
 
 .active {
-
-    .panel {
-        display: block;
-    }
 
     img {
         transform: rotate(180deg);

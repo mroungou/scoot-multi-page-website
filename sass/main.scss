@@ -2,6 +2,8 @@
 @use 'colors' as c;
 @use 'fonts';
 @use 'about';
+@use 'careers';
+@use 'locations';
 
 * {
     // removing all margins at the beginning for more control
@@ -54,6 +56,32 @@ nav {
 
     .menu {
       display: none;
+      font-weight: 700;
+      font-size: 1.125rem;
+      line-height: 25px;
+      background: rgba(51, 58, 68, 1);
+      height: 100%;
+      position: fixed;
+      width: 256px;
+      left: 0;
+      top: 4rem;
+      z-index: 1;
+      padding: 4rem 2rem 1rem;
+      
+      ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        row-gap: 1.5rem;
+        padding: 0; // removing default style
+        }
+        
+        a, a:visited {
+        color: c.$lightGrey;
+        text-decoration: none;
+        font-family: "Space Mono", serif;
+        }
+
     }
 }
 

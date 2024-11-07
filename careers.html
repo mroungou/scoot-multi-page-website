@@ -1,89 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Scoot</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./sass/normalize.css">
+    <link rel="stylesheet" href="./dist/css/main.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <script src="./index.js" defer></script>
+    <title>Scoot</title>
 </head>
 <body>
-
-  About
-  Location
-  Careers
-
-  Get Scootin
-
-
-
-  Careers
-
-
-
-  Care to join our mission?
-
-  We’re always looking for ambitious individuals to help us on our journey. If you’re 
-  passionate about our mission to provide clean, accessible transport to improve urban 
-  living we want to hear from you!
-
-  Say Hello
-
-
-
-  Why join us?
-
-  01
-  Our tech
-  We’re using cutting edge technology to drive accessible urban transportation forward. 
-  Our fully electric scooters are a joy to ride!
-
-  02
-  Our integrity
-  We are fully committed to deliver a great yet safe, sustainable micro-mobility experience 
-  in every city we serve.
-
-  03
-  Our community
-  We support every community we serve. All workers are paid a living wage based on their 
-  location and are Scoot employees.
-
-  
-
-  General Manager
-  Jakarta, Indonesia
-  Apply
-
-  UI/UX Designer
-  Yokohama, Japan
-  Apply
-
-  Blog Content Copywriter
-  New York, United States
-  Apply
-
-  Graphic Designer
-  New York, United States
-  Apply
-
-  Fleet Supervisor
-  Jakarta, Indonesia
-  Apply
-
-  UX Analyst
-  London, United Kingdom
-  Apply
-
-  
-
-  Sign up and Scoot off today
-
-
-
-  About
-  Location
-  Careers
-
+    <main>
+        <header>
+            <nav class="nav" id="nav">
+                <div class="logo" onclick="document.location.href='./index.html'"><img src="./assets/logo.svg" alt="Logo"></div>
+                <div class="open-menu mobile" id="open-menu"><img src="./assets/icons/hamburger.svg" alt="Open Menu"></div>
+                <div class="close-menu mobile" id="close-menu"><img src="./assets/icons/close.svg" alt="Close Menu"></div>
+                <div class="menu" id="menu-content">
+                    <ul>
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="./locations.html">Location</a></li>
+                        <li><a href="./careers.html">Careers</a></li>
+                    </ul>
+                    <button onclick="window.location.href='#sign-up'">Get Scootin</button>
+                </div>
+            </nav>
+        </header>
+        <section class="careers-hero">
+            <h1>Careers</h1>
+        </section>
+        <div class="join">
+            <div class="img-container">
+                <div class="img-info"><img src="./assets/images/join-us.jpg" alt="Team Meeting"></div>
+                <div class="pattern"><img src="./assets/patterns/left-downward-arrow.svg" alt="Left downward arrow"></div>
+            </div>
+            <h2>Care to join our mission?</h2>
+            <p>
+                We’re always looking for ambitious individuals to help us on our journey. If you’re
+                passionate about our mission to provide clean, accessible transport to improve urban
+                living we want to hear from you!
+            </p>
+            <button>Say Hello</button>
+        </div>
+        <section class="why-join">
+            <h3>Why join us?</h3>
+            <section class="join-info">
+                <div class="our-tech">
+                    <div class="img-container">
+                        <img src="./assets/images/our-tech.jpg" alt="Our tech">
+                        <div class="num">01</div>
+                    </div>
+                    <h4>Our tech</h4>
+                    <p>
+                        We’re using cutting edge technology to drive accessible urban transportation forward.
+                        Our fully electric scooters are a joy to ride!
+                    </p>
+                </div>
+                <div class="our-integrity">
+                    <div class="img-container">
+                        <img src="./assets/images/our-integrity.jpg" alt="Our integrity">
+                        <div class="num">02</div>
+                    </div>
+                    <h4>Our integrity</h4>
+                    <p>
+                        We are fully committed to deliver a great yet safe, sustainable micro-mobility experience
+                        in every city we serve.
+                    </p>
+                </div>
+                <div class="community">
+                    <div class="img-container">
+                        <img src="./assets/images/our-community.jpg" alt="Our community">
+                        <div class="num">03</div>
+                    </div>
+                    <h4>Our community</h4>
+                    <p>
+                        We support every community we serve. All workers are paid a living wage based on their
+                        location and are Scoot employees.
+                    </p>
+                </div>
+            </section>
+        </section>
+        <section class="jobs">
+            <div class="job">
+                <div class="text">
+                    <span class="position">General Manager</span>
+                    <span class="location">Jakarta, Indonesia</span>
+                </div>
+                <button>Apply</button>
+            </div>
+        
+            <div class="job">
+                <div class="text">
+                    <span class="position">UI/UX Designer</span>
+                    <span class="location">Yokohama, Japan</span>
+                </div>
+                <button>Apply</button>
+            </div>
+        
+            <div class="job">
+                <div class="text">
+                    <span class="position">Blog Content Copywriter</span>
+                    <span class="location">New York, United States</span>
+                </div>
+                <button>Apply</button>
+            </div>
+        
+            <div class="job">
+                <div class="text">
+                    <span class="position">Graphic Designer</span>
+                    <span class="location">New York, United States</span>
+                </div>
+                <button>Apply</button>
+            </div>
+        
+            <div class="job">
+                <div class="text">
+                    <span class="position">Fleet Supervisor</span>
+                    <span class="location">Jakarta, Indonesia</span>
+                </div>
+                <button>Apply</button>
+            </div>
+        
+            <div class="job">
+                <div class="text">
+                    <span class="position">UX Analyst</span>
+                    <span class="location">London, United Kingdom</span>
+                </div>
+                <button>Apply</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="sign-up" id="sign-up">
+            <h3>Sign up and Scoot off today</h3>
+            <div class="stores">
+                <div class="app-store"><img src="./assets/icons/app-store.svg" alt="App Store"></div>
+                <div class="play-store"><img src="./assets/icons/google-play.svg" alt="Google Play Store"></div>
+            </div>
+            <div class="pattern">
+                <img src="./assets/patterns/semi-circles.svg" alt="Semi-Circles">
+            </div>
+        </section>
+        <div class="footer-nav">
+            <div class="logo" onclick="document.location.href='./index.html'"><img src="./assets/logo-white.svg" alt="Scoot Logo"></div>
+            <div class="links">
+                <ul>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./locations.html">Location</a></li>
+                    <li><a href="./careers.html">Careers</a></li>
+                </ul>
+            </div>
+            <div class="socials">
+                <img src="./assets/icons/facebook.svg" alt="Facebook">
+                <img src="./assets/icons/twitter.svg" alt="Twitter">
+                <img src="./assets/icons/instagram.svg" alt="Instagram">
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

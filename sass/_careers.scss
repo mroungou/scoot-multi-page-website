@@ -1,0 +1,124 @@
+@use 'colors' as c;
+@use 'variables' as v;
+
+.careers-hero {
+    background: url('../../assets/images/careers-location-hero-mobile.jpg');
+    text-align: center;
+    padding: 3.78rem 2rem;
+
+    h1 {
+        @include v.header1;
+        color: c.$white;
+    }
+}
+
+.join {
+    margin-top: 4.4rem;
+    padding: 0 2rem;
+    text-align: center;
+
+    h2 {
+        @include v.header2;
+    }
+
+    p {
+        @include v.paragraphs;
+        margin: 2rem 0;
+    }
+}
+
+.join .pattern {
+    top: 52%;
+    left: -2%;
+}
+
+.why-join {
+    margin-top: 7.455rem;
+    text-align: center;
+    padding: 0 2rem;
+
+    h3 {
+       @include v.header3;
+    }
+
+    h4 {
+        @include v.header4;
+    }
+
+    p {
+        @include v.paragraphs;
+        margin-top: 1.688rem;
+    }
+
+    .join-info {
+        margin-top: 4rem;
+        display: flex;
+        flex-direction: column;
+        row-gap: 3.5rem;
+    }
+
+    .img-container {
+        margin-bottom: 3.85rem;
+
+        img {
+            border-radius: 50%;
+        }
+    }
+
+    .num {
+        font-size: 1.75rem;
+        font-weight: 700;
+        letter-spacing: -1.07px;
+        line-height: 28px;
+        color: c.$darkNavy;
+        font-family: "Space Mono", serif;
+        background: c.$yellow;
+        width: 96px;
+        height: 96px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        left: 35%;
+        top: 79%;
+    }
+}
+
+.jobs {
+    padding: 0 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    margin-top: 9.1rem;
+
+    .job {
+        background: c.$snow;
+        padding: 2.05rem 2rem;
+    }
+    
+    .position {
+        display: block;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: -0.8px;
+        color: c.$darkNavy;
+        font-family: "Space Mono", serif;
+        font-size: 1.125rem;
+        margin-bottom: .25rem;
+    }
+
+    .location {
+        font-weight: 400;
+        font-size: .938rem;
+        line-height: 25px;
+        color: c.$darkNavy;
+    }
+
+    button {
+        margin: 0 auto;
+        width: 247px;
+        margin-top: 1.1rem;
+    }
+}

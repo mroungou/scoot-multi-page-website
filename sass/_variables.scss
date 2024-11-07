@@ -13,6 +13,23 @@
     line-height: 32px;
     letter-spacing: -1.43px;
     font-weight: 700;
+    color: c.$darkNavy;
+}
+
+@mixin header3 {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -1.43px;
+    color: c.$darkNavy;
+}
+
+@mixin header4 {
+    line-height: 28px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: c.$darkNavy;
+    letter-spacing: -1.07px;
 }
 
 @mixin paragraphs {

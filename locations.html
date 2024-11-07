@@ -1,49 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Scoot</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./sass/normalize.css">
+    <link rel="stylesheet" href="./dist/css/main.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <script src="./index.js" defer></script>
+    <title>Scoot</title>
 </head>
-<body>
-
-  About
-  Location
-  Careers
-
-  Get Scootin
-
-
-
-  Locations
-
-
-
-  New York
-  London
-  Yokohama
-  Jakarta
-
-  Your city not listed?
-
-  If you’d like to see Scoot in your hometown, be sure to let us know. We track 
-  requests and plan launches based on demand. Feel free to message us by clicking 
-  the link or messaging us on social.
-
-  Message Us
-
-  
-
-  Sign up and Scoot off today
-
-
-
-  About
-  Location
-  Careers
-
+<body class="locations-page">
+    <main>
+        <header>
+            <nav class="nav" id="nav">
+                <div class="logo" onclick="document.location.href='./index.html'"><img src="./assets/logo.svg" alt="Logo"></div>
+                <div class="open-menu mobile" id="open-menu"><img src="./assets/icons/hamburger.svg" alt="Open Menu"></div>
+                <div class="close-menu mobile" id="close-menu"><img src="./assets/icons/close.svg" alt="Close Menu"></div>
+                <div class="menu" id="menu-content">
+                    <ul>
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="./locations.html">Location</a></li>
+                        <li><a href="./careers.html">Careers</a></li>
+                    </ul>
+                    <button onclick="window.location.href='#sign-up'">Get Scootin</button>
+                </div>
+            </nav>
+        </header>
+        <section class="locations-hero">
+            <h1>Locations</h1>
+        </section>
+        <section class="locations">
+            <div class="img-container"><img src="./assets/images/world-map-mobile.png" class="mobile" alt="World Map"></div>
+            <div class="cities">
+                <div class="city"><h4>New York</h4></div>
+                <div class="city"><h4>London</h4></div>
+                <div class="city"><h4>Jakarta</h4></div>
+                <div class="city"><h4>Yokohama</h4></div>
+            </div>
+        </section>
+        <section class="inquiry">
+            <h3>Your city not listed?</h3>
+            <p>
+                If you’d like to see Scoot in your hometown, be sure to let us know. We track
+                requests and plan launches based on demand. Feel free to message us by clicking
+                the link or messaging us on social.
+            </p>  
+            <button>Message Us</button>
+        </section>
+    </main>
+    <footer>
+        <section class="sign-up" id="sign-up">
+            <h3>Sign up and Scoot off today</h3>
+            <div class="stores">
+                <div class="app-store"><img src="./assets/icons/app-store.svg" alt="App Store"></div>
+                <div class="play-store"><img src="./assets/icons/google-play.svg" alt="Google Play Store"></div>
+            </div>
+            <div class="pattern">
+                <img src="./assets/patterns/semi-circles.svg" alt="Semi-Circles">
+            </div>
+        </section>
+        <div class="footer-nav">
+            <div class="logo" onclick="document.location.href='./index.html'"><img src="./assets/logo-white.svg" alt="Scoot Logo"></div>
+            <div class="links">
+                <ul>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./locations.html">Location</a></li>
+                    <li><a href="./careers.html">Careers</a></li>
+                </ul>
+            </div>
+            <div class="socials">
+                <img src="./assets/icons/facebook.svg" alt="Facebook">
+                <img src="./assets/icons/twitter.svg" alt="Twitter">
+                <img src="./assets/icons/instagram.svg" alt="Instagram">
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
