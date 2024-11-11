@@ -11,6 +11,10 @@
     margin-block-end: 0;
     margin: 0;
 }
+.tablet, 
+.desktop {
+    display: none;
+}
 
 h1, h2, h3, h4 {
     font-family: "Space Mono", serif;
@@ -63,7 +67,6 @@ nav {
       height: 100%;
       overflow: hidden;
       position: fixed;
-      box-sizing: border-box;
       width: 0;
       left: 0;
       top: 4rem;
@@ -97,7 +100,7 @@ nav {
 
 .hero {
     text-align: center;
-    background-image: url('../../assets/images/home-hero-mobile.jpg');
+    background: url('../../assets/images/home-hero-mobile.jpg');
     padding: 7.2rem 2rem 11.2rem;
     color: c.$white;
     position: relative;
@@ -146,12 +149,8 @@ button {
     }
 
     h4 {
-        font-size: 1.25rem;
-        font-weight: 700;
-        letter-spacing: -0.89px;
-        line-height: 28px;
+        @include v.header4;
         margin-bottom: 1.5rem;
-        color: c.$darkNavy;
     }
 
     p {
@@ -172,10 +171,7 @@ button {
     text-align: center;
 
     h3 {
-        font-size: 2rem;
-        line-height: 32px;
-        letter-spacing: -1.43px;
-        color: c.$darkNavy;
+        @include v.header3;
     }
 
     p {
@@ -206,6 +202,7 @@ button {
     .pattern {
         top: 51.9%;
         left: -1.9%;
+        z-index: 1;
     }
 }
 
@@ -213,6 +210,7 @@ button {
     .pattern {
         top: -2.5%;
         right: 24%;
+        z-index: 1;
     }
 }
 
@@ -220,6 +218,7 @@ button {
     .pattern {
         top: -0.5%;
         left: 40%;
+        z-index: 1;
     }
 }
 
@@ -233,11 +232,9 @@ footer {
         padding: 5.6rem 2rem 5.2rem;
         position: relative;
         h3 {
-            font-size: 2rem;
-            letter-spacing: -1.43px;
-            line-height: 32px;
+            @include v.header3;
             color: rgba(255, 255, 255, 1);
-            margin-bottom: 2.5rem;
+            margin: 0 auto 2.5rem;
         }
 
         .pattern{
@@ -272,7 +269,7 @@ footer {
             ul {
                 display: flex;
                 flex-direction: column;
-                row-gap: 1rem;
+                gap: 1rem;
                 list-style: none;
                 padding: 0;
             }
@@ -294,6 +291,201 @@ footer {
         }
     }
 }
+
+@media screen and (min-width: 768px) {
+    .mobile {
+        display: none;
+    }
+
+    .tablet {
+        display: block;
+    }
+
+    header {
+        padding: 1.345rem 2rem;
+    }
+
+    nav {
+        column-gap: 4.1rem;
+
+        .logo {
+            order: 1;
+            margin: 0;
+            img {
+                width: 107.82px;
+                height: 28.56px;
+            }
+        }
+        .menu {
+            order: 2;
+            width: 100%;
+            position: static;
+            height: auto;
+            display: flex;
+            background: none;
+            
+            .content {
+                display: flex;
+                flex-direction: row;
+                padding: 0;
+                width: 100%;
+            }
+
+            ul {
+                flex-direction: row;
+                column-gap: 1rem;
+                align-items: center;
+                column-gap: 2rem;
+            }
+
+            a, a:visited {
+                color: c.$dimGrey;
+                font-size: .938rem;
+            }
+
+            button {
+                margin: 0;
+                margin-left: auto;
+                width: 180px;
+            }
+        } 
+    }
+
+    .hero {
+        background: url('../../assets/images/home-hero-tablet.jpg');
+        padding: 8.6rem 6rem 13.4rem;
+
+        .pattern-hero {
+            left: -16.5%;
+            top: 71.6%;
+        }
+
+        .pattern2-hero {
+            position: absolute;
+            bottom: 6.8%;
+            left: 73.6%;
+        }
+    }
+
+    .how  {
+        text-align: left;
+        padding: 0 6rem;
+        row-gap: 2.8rem;
+
+        .steps {
+            column-gap: 4.938rem;
+            display: flex;
+        }
+        
+        img {
+            width: 96px;
+            height: 96px;
+        }
+    }
+
+    .information {
+        margin-top: 9.15rem;
+        padding: 0 6rem;
+        gap: 8rem;
+
+        .img-info {
+            width: 445px;
+            margin: 0 auto;
+        }
+    }
+
+    .info {
+        h3 {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        p {
+            margin: 2.5rem 0;
+        }
+    }
+    
+    .telemetry {
+        .pattern {
+            top: 66.5%;
+            left: -11%;
+        }
+
+        .pattern-2 {
+            position: absolute;
+            top: 0%;
+            right: -77.4%;
+        }
+    }
+
+    .city .img-container{
+        .pattern {
+            top: -0.1%;
+            right: 55.2%;
+        }
+
+        .pattern-2 {
+            position: absolute;
+            top: -0.1%;
+            right: 99.3%;
+        }
+    }
+
+    .payments .img-container {
+        .pattern {
+            top: 16.4%;
+            left: 55%;
+        }
+
+        .pattern-2 {
+            position: absolute;
+            top: 0%;
+            right: -77.4%;
+        }
+    }
+
+    footer {
+        margin-top: 6.7rem;
+
+        .sign-up {
+            padding: 3.9rem 2rem 3.6rem;
+
+            .pattern {
+                top: 47.5%;
+                right: -21.1%;
+            }
+        }
+
+
+        h3 {
+            width: 60%;
+        }
+
+        .footer-nav {
+            display: flex;
+            padding: 2rem 2.5rem;
+
+            .links {
+                margin: auto;
+                ul {
+                    flex-direction: row;
+                    align-items: center;
+                    align-content: center;
+                }
+            }
+
+            .socials {
+                margin: 0 0 0 auto;
+                align-items: center;
+                img {
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+        }
+    }
+}
+
 
 .menu-open {
     #open-menu {

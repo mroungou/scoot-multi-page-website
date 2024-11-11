@@ -11,6 +11,13 @@
   font-weight: 700;
   color: rgb(255, 255, 255);
 }
+@media screen and (min-width: 768px) {
+  .about-hero h1 {
+    font-size: 3.5rem;
+    line-height: 56px;
+    letter-spacing: -2.5px;
+  }
+}
 
 .about {
   margin-top: 4.4rem;
@@ -55,6 +62,13 @@
   line-height: 32px;
   letter-spacing: -1.43px;
   color: rgb(73, 85, 103);
+}
+@media screen and (min-width: 768px) {
+  .values-section h3 {
+    font-size: 3rem;
+    line-height: 48px;
+    letter-spacing: -2.14px;
+  }
 }
 .values-section h4 {
   line-height: 28px;
@@ -178,6 +192,13 @@
   font-weight: 700;
   color: rgb(255, 255, 255);
 }
+@media screen and (min-width: 768px) {
+  .careers-hero h1 {
+    font-size: 3.5rem;
+    line-height: 56px;
+    letter-spacing: -2.5px;
+  }
+}
 
 .join {
   margin-top: 4.4rem;
@@ -214,6 +235,13 @@
   line-height: 32px;
   letter-spacing: -1.43px;
   color: rgb(73, 85, 103);
+}
+@media screen and (min-width: 768px) {
+  .why-join h3 {
+    font-size: 3rem;
+    line-height: 48px;
+    letter-spacing: -2.14px;
+  }
 }
 .why-join h4 {
   line-height: 28px;
@@ -305,6 +333,13 @@
   font-weight: 700;
   color: rgb(255, 255, 255);
 }
+@media screen and (min-width: 768px) {
+  .locations-hero h1 {
+    font-size: 3.5rem;
+    line-height: 56px;
+    letter-spacing: -2.5px;
+  }
+}
 
 .locations {
   margin-top: 4.4rem;
@@ -347,6 +382,13 @@
   color: rgb(73, 85, 103);
   text-transform: capitalize;
 }
+@media screen and (min-width: 768px) {
+  .inquiry h3 {
+    font-size: 3rem;
+    line-height: 48px;
+    letter-spacing: -2.14px;
+  }
+}
 .inquiry p {
   font-size: 0.938rem;
   line-height: 25px;
@@ -362,6 +404,11 @@
   margin-block-start: 0;
   margin-block-end: 0;
   margin: 0;
+}
+
+.tablet,
+.desktop {
+  display: none;
 }
 
 h1, h2, h3, h4 {
@@ -412,7 +459,6 @@ nav .menu {
   height: 100%;
   overflow: hidden;
   position: fixed;
-  box-sizing: border-box;
   width: 0;
   left: 0;
   top: 4rem;
@@ -441,7 +487,7 @@ nav .menu button {
 
 .hero {
   text-align: center;
-  background-image: url("../../assets/images/home-hero-mobile.jpg");
+  background: url("../../assets/images/home-hero-mobile.jpg");
   padding: 7.2rem 2rem 11.2rem;
   color: rgb(255, 255, 255);
   position: relative;
@@ -451,6 +497,13 @@ nav .menu button {
   letter-spacing: -1.79px;
   line-height: 40px;
   font-weight: 700;
+}
+@media screen and (min-width: 768px) {
+  .hero h1 {
+    font-size: 3.5rem;
+    line-height: 56px;
+    letter-spacing: -2.5px;
+  }
 }
 .hero p {
   margin: 1.5rem 0 2.1rem;
@@ -489,12 +542,12 @@ button {
   margin-bottom: 1.3rem;
 }
 .how h4 {
-  font-size: 1.25rem;
-  font-weight: 700;
-  letter-spacing: -0.89px;
   line-height: 28px;
-  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
   color: rgb(73, 85, 103);
+  letter-spacing: -1.07px;
+  margin-bottom: 1.5rem;
 }
 .how p {
   font-size: 0.938rem;
@@ -516,9 +569,17 @@ button {
 }
 .info h3 {
   font-size: 2rem;
+  font-weight: 700;
   line-height: 32px;
   letter-spacing: -1.43px;
   color: rgb(73, 85, 103);
+}
+@media screen and (min-width: 768px) {
+  .info h3 {
+    font-size: 3rem;
+    line-height: 48px;
+    letter-spacing: -2.14px;
+  }
 }
 .info p {
   margin: 2rem 0;
@@ -543,16 +604,19 @@ button {
 .telemetry .pattern {
   top: 51.9%;
   left: -1.9%;
+  z-index: 1;
 }
 
 .city .img-container .pattern {
   top: -2.5%;
   right: 24%;
+  z-index: 1;
 }
 
 .payments .img-container .pattern {
   top: -0.5%;
   left: 40%;
+  z-index: 1;
 }
 
 footer {
@@ -567,10 +631,19 @@ footer .sign-up {
 }
 footer .sign-up h3 {
   font-size: 2rem;
-  letter-spacing: -1.43px;
+  font-weight: 700;
   line-height: 32px;
+  letter-spacing: -1.43px;
+  color: rgb(73, 85, 103);
   color: rgb(255, 255, 255);
-  margin-bottom: 2.5rem;
+  margin: 0 auto 2.5rem;
+}
+@media screen and (min-width: 768px) {
+  footer .sign-up h3 {
+    font-size: 3rem;
+    line-height: 48px;
+    letter-spacing: -2.14px;
+  }
 }
 footer .sign-up .pattern {
   position: absolute;
@@ -601,7 +674,7 @@ footer .footer-nav .links {
 footer .footer-nav .links ul {
   display: flex;
   flex-direction: column;
-  row-gap: 1rem;
+  gap: 1rem;
   list-style: none;
   padding: 0;
 }
@@ -619,6 +692,163 @@ footer .footer-nav .socials {
   width: 120px;
 }
 
+@media screen and (min-width: 768px) {
+  .mobile {
+    display: none;
+  }
+  .tablet {
+    display: block;
+  }
+  header {
+    padding: 1.345rem 2rem;
+  }
+  nav {
+    -moz-column-gap: 4.1rem;
+         column-gap: 4.1rem;
+  }
+  nav .logo {
+    order: 1;
+    margin: 0;
+  }
+  nav .logo img {
+    width: 107.82px;
+    height: 28.56px;
+  }
+  nav .menu {
+    order: 2;
+    width: 100%;
+    position: static;
+    height: auto;
+    display: flex;
+    background: none;
+  }
+  nav .menu .content {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    width: 100%;
+  }
+  nav .menu ul {
+    flex-direction: row;
+    -moz-column-gap: 1rem;
+         column-gap: 1rem;
+    align-items: center;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+  }
+  nav .menu a, nav .menu a:visited {
+    color: rgb(147, 156, 170);
+    font-size: 0.938rem;
+  }
+  nav .menu button {
+    margin: 0;
+    margin-left: auto;
+    width: 180px;
+  }
+  .hero {
+    background: url("../../assets/images/home-hero-tablet.jpg");
+    padding: 8.6rem 6rem 13.4rem;
+  }
+  .hero .pattern-hero {
+    left: -16.5%;
+    top: 71.6%;
+  }
+  .hero .pattern2-hero {
+    position: absolute;
+    bottom: 6.8%;
+    left: 73.6%;
+  }
+  .how {
+    text-align: left;
+    padding: 0 6rem;
+    row-gap: 2.8rem;
+  }
+  .how .steps {
+    -moz-column-gap: 4.938rem;
+         column-gap: 4.938rem;
+    display: flex;
+  }
+  .how img {
+    width: 96px;
+    height: 96px;
+  }
+  .information {
+    margin-top: 9.15rem;
+    padding: 0 6rem;
+    gap: 8rem;
+  }
+  .information .img-info {
+    width: 445px;
+    margin: 0 auto;
+  }
+  .info h3 {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .info p {
+    margin: 2.5rem 0;
+  }
+  .telemetry .pattern {
+    top: 66.5%;
+    left: -11%;
+  }
+  .telemetry .pattern-2 {
+    position: absolute;
+    top: 0%;
+    right: -77.4%;
+  }
+  .city .img-container .pattern {
+    top: -0.1%;
+    right: 55.2%;
+  }
+  .city .img-container .pattern-2 {
+    position: absolute;
+    top: -0.1%;
+    right: 99.3%;
+  }
+  .payments .img-container .pattern {
+    top: 16.4%;
+    left: 55%;
+  }
+  .payments .img-container .pattern-2 {
+    position: absolute;
+    top: 0%;
+    right: -77.4%;
+  }
+  footer {
+    margin-top: 6.7rem;
+  }
+  footer .sign-up {
+    padding: 3.9rem 2rem 3.6rem;
+  }
+  footer .sign-up .pattern {
+    top: 47.5%;
+    right: -21.1%;
+  }
+  footer h3 {
+    width: 60%;
+  }
+  footer .footer-nav {
+    display: flex;
+    padding: 2rem 2.5rem;
+  }
+  footer .footer-nav .links {
+    margin: auto;
+  }
+  footer .footer-nav .links ul {
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+  }
+  footer .footer-nav .socials {
+    margin: 0 0 0 auto;
+    align-items: center;
+  }
+  footer .footer-nav .socials img {
+    width: 24px;
+    height: 24px;
+  }
+}
 .menu-open #open-menu {
   display: none;
 }
