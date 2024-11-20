@@ -180,6 +180,22 @@
   transform: rotate(180deg);
 }
 
+@media screen and (min-width: 768px) {
+  .about-hero {
+    background-image: url("../../assets/images/about-hero-tablet.jpg");
+    text-align: left;
+    padding: 4.48rem 6rem;
+  }
+  .about-hero .img-container {
+    position: relative;
+    margin-bottom: 0;
+  }
+  .about-hero .img-container .pattern {
+    position: absolute;
+    bottom: 0%;
+    right: -22%;
+  }
+}
 .careers-hero {
   background: url("../../assets/images/careers-location-hero-mobile.jpg");
   text-align: center;

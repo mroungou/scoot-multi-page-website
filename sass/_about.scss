@@ -166,3 +166,22 @@
         transform: rotate(180deg);
     }
 }
+
+@media screen and (min-width: 768px) {
+    .about-hero {
+        background-image: url('../../assets/images/about-hero-tablet.jpg');
+        text-align: left;
+        padding: 4.48rem 6rem;
+
+        .img-container {
+            position: relative;
+            margin-bottom: 0;
+
+            .pattern {
+                position: absolute;
+                bottom: 0%;
+                right: -22%;
+            }
+        }
+    }
+}
