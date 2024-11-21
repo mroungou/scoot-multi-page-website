@@ -34,6 +34,13 @@
   font-weight: 700;
   color: rgb(73, 85, 103);
 }
+@media screen and (min-width: 768px) {
+  .about h2 {
+    font-size: 3rem;
+    line-height: 48px;
+    letter-spacing: -2.14px;
+  }
+}
 .about p {
   font-size: 0.938rem;
   line-height: 25px;
@@ -129,6 +136,13 @@
   color: rgb(73, 85, 103);
   text-align: center;
 }
+@media screen and (min-width: 768px) {
+  .faq-section h2 {
+    font-size: 3rem;
+    line-height: 48px;
+    letter-spacing: -2.14px;
+  }
+}
 .faq-section h4 {
   font-size: 1.5rem;
   font-weight: 700;
@@ -195,6 +209,84 @@
     bottom: 0%;
     right: -22%;
   }
+  .about {
+    padding: 0 6rem;
+    margin-top: 9rem;
+  }
+  .about .img-container .img-info {
+    width: 445px;
+    height: 445px;
+    margin: 0 auto;
+  }
+  .about p {
+    margin: 2.5rem 0;
+  }
+  .mobility .pattern {
+    top: 59%;
+    left: -11%;
+  }
+  .mobility .pattern-2 {
+    position: absolute;
+    top: 0%;
+    left: 100%;
+  }
+  .urban-living h2 {
+    width: 75%;
+    margin: 0 auto;
+  }
+  .urban-living .pattern {
+    top: -1.3%;
+    left: -33.8%;
+  }
+  .urban-living .pattern-2 {
+    position: absolute;
+    top: 0%;
+    right: 100%;
+  }
+  .values-section {
+    margin-top: 5rem;
+    padding: 0 6rem;
+  }
+  .values-section p {
+    width: 83%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .values-section .value {
+    margin-top: 6.35rem;
+  }
+  .values-section .img-container {
+    margin-bottom: 5.35rem;
+  }
+  .values-section .num {
+    left: 41.6%;
+    top: 82%;
+  }
+  .faq-section {
+    margin-top: 7rem;
+    padding: 0 2rem;
+    row-gap: 4rem;
+  }
+  .faq-section h4 {
+    font-size: 2.5rem;
+    line-height: 48px;
+    letter-spacing: -1.79px;
+  }
+  .faq {
+    padding: 0.796rem 2.544rem;
+  }
+  .faq button {
+    font-size: 1.5rem;
+    letter-spacing: -1.07px;
+    line-height: 28px;
+  }
+  .faq button .text {
+    width: auto;
+  }
+  .how-faq .faq:not(:last-child),
+  .safe-driving .faq:not(:last-child) {
+    margin-bottom: 1.5rem;
+  }
 }
 .careers-hero {
   background: url("../../assets/images/careers-location-hero-mobile.jpg");
@@ -227,6 +319,13 @@
   letter-spacing: -1.43px;
   font-weight: 700;
   color: rgb(73, 85, 103);
+}
+@media screen and (min-width: 768px) {
+  .join h2 {
+    font-size: 3rem;
+    line-height: 48px;
+    letter-spacing: -2.14px;
+  }
 }
 .join p {
   font-size: 0.938rem;
@@ -337,6 +436,26 @@
   margin-top: 1.1rem;
 }
 
+@media screen and (min-width: 768px) {
+  .careers-hero {
+    background-image: url("../../assets/images/careers-locations-hero-tablet.jpg");
+    text-align: left;
+    padding: 4.48rem 6rem;
+  }
+  .careers-hero .img-container {
+    position: relative;
+    margin-bottom: 0;
+  }
+  .careers-hero .img-container .pattern {
+    position: absolute;
+    bottom: 0%;
+    right: -22%;
+  }
+  .join {
+    margin-top: 9rem;
+    padding: 0 6rem;
+  }
+}
 .locations-hero {
   background: url("../../assets/images/careers-location-hero-mobile.jpg");
   text-align: center;
@@ -416,6 +535,74 @@
   margin-top: 4.5rem;
 }
 
+@media screen and (min-width: 768px) {
+  .locations-hero {
+    background-image: url("../../assets/images/careers-locations-hero-tablet.jpg");
+    text-align: left;
+    padding: 4.48rem 6rem;
+  }
+  .locations-hero .img-container {
+    position: relative;
+    margin-bottom: 0;
+  }
+  .locations-hero .img-container .pattern {
+    position: absolute;
+    bottom: 0%;
+    right: -22%;
+  }
+  .locations {
+    margin-top: 9rem;
+    position: relative;
+  }
+  .locations .cities {
+    position: absolute;
+    top: 0%;
+  }
+  .locations .city {
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 63% 75%, 53% 100%, 42% 75%, 0% 75%);
+            clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 63% 75%, 53% 100%, 42% 75%, 0% 75%);
+    background-color: rgb(252, 183, 43);
+    height: 40px;
+    width: 120px;
+    padding: 0;
+  }
+  .locations .new-york {
+    position: absolute;
+    top: 135%;
+    left: 87%;
+  }
+  .locations .london {
+    position: absolute;
+    top: 72%;
+    left: 208%;
+  }
+  .locations .jakarta {
+    position: absolute;
+    top: 426%;
+    left: 405%;
+  }
+  .locations .yokohama {
+    position: relative;
+    left: 448%;
+  }
+  .locations h4 {
+    font-size: 0.813rem;
+  }
+  .inquiry {
+    padding: 0 6rem;
+    margin-top: 3.5rem;
+  }
+  .inquiry h3 {
+    width: 75%;
+    margin: 0 auto;
+  }
+  .inquiry p {
+    margin: 2.5rem 0;
+  }
+  .locations-page footer {
+    margin-top: 7.5rem;
+  }
+}
 * {
   margin-block-start: 0;
   margin-block-end: 0;
@@ -710,7 +897,7 @@ footer .footer-nav .socials {
 
 @media screen and (min-width: 768px) {
   .mobile {
-    display: none;
+    display: none !important;
   }
   .tablet {
     display: block;

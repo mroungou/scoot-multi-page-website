@@ -60,3 +60,85 @@
 .locations-page footer {
     margin-top: 4.5rem;
 }
+
+@media screen and (min-width: 768px) {
+  .locations-hero {
+    background-image: url('../../assets/images/careers-locations-hero-tablet.jpg');
+    text-align: left;
+    padding: 4.48rem 6rem;
+
+        .img-container {
+            position: relative;
+            margin-bottom: 0;
+
+            .pattern {
+                position: absolute;
+                bottom: 0%;
+                right: -22%;
+            }
+        }
+    }
+
+    .locations {
+        margin-top: 9rem;
+        position: relative;
+
+        .cities {
+            position: absolute;
+            top: 0%;
+        }
+
+        .city {
+            clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 63% 75%, 53% 100%, 42% 75%, 0% 75%);
+            background-color: c.$yellow;
+            height: 40px;
+            width: 120px;
+            padding: 0;
+        }
+        
+        .new-york {
+            position: absolute;
+            top: 135%;
+            left: 87%;
+        }
+        
+        .london {
+            position: absolute;
+            top: 72%;
+            left: 208%;
+        }
+
+        .jakarta {
+            position: absolute;
+            top: 426%;
+            left: 405%;
+        }
+
+        .yokohama {
+            position: relative;
+            left: 448%;
+        }
+
+        h4 {
+            font-size: 0.813rem;
+        }
+    }
+
+    .inquiry {
+        padding: 0 6rem;
+        margin-top: 3.5rem;
+
+        h3 {
+            width: 75%;
+            margin: 0 auto;
+        }
+
+        p {
+            margin: 2.5rem 0;
+        }
+    }
+
+    .locations-page footer {
+        margin-top: 7.5rem;
+    }
+}

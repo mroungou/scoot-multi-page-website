@@ -184,4 +184,107 @@
             }
         }
     }
+
+    .about {
+        padding: 0 6rem;
+        margin-top: 9rem;
+
+        .img-container .img-info {
+            width: 445px;
+            height: 445px;
+            margin: 0 auto;
+        }
+
+        p {
+            margin: 2.5rem 0;
+        }
+    }
+
+    .mobility {
+
+        .pattern {
+            top: 59%;
+            left: -11%;
+        }
+
+        .pattern-2 {
+            position: absolute;
+            top: 0%;
+            left: 100%;
+        }
+    }
+
+    .urban-living {
+
+        h2 {
+            width: 75%;
+            margin: 0 auto;
+        }
+
+        .pattern {
+            top: -1.3%;
+            left: -33.8%;
+        }
+
+        .pattern-2 {
+            position: absolute;
+            top: 0%;
+            right: 100%;
+        }
+    }
+
+    .values-section {
+        margin-top: 5rem;
+        padding: 0 6rem;
+
+        p {
+            width: 83%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .value {
+            margin-top: 6.35rem;
+        }
+
+        .img-container {
+            margin-bottom: 5.35rem;
+        }
+
+        .num {
+            left: 41.6%;
+            top: 82%;
+        }
+    }
+
+    .faq-section {
+        margin-top: 7rem;
+        padding: 0 2rem;
+        row-gap: 4rem;
+
+        h4 {
+            font-size: 2.5rem;
+            line-height: 48px;
+            letter-spacing: -1.79px;
+        }
+    }
+
+    .faq {
+        padding: .796rem 2.544rem;
+        button {
+            font-size: 1.5rem;
+            letter-spacing: -1.07px;
+            line-height: 28px;
+
+            .text {
+                width: auto;
+            }
+        }
+
+    }
+
+    .how-faq .faq:not(:last-child),
+    .safe-driving .faq:not(:last-child) {
+    margin-bottom: 1.5rem;
+    }
 }
