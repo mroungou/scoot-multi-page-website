@@ -144,5 +144,71 @@
     .join {
         margin-top: 9rem;
         padding: 0 6rem;
+
+        p {
+            margin: 2.5rem 0;
+        }
+
+        .img-container  {
+            .img-info {
+                width: 452px;
+                margin: 0 auto;
+            }
+
+            .pattern {
+                left: -11%;
+                top: 66%;
+            }
+
+            .pattern-2 {
+                position: absolute;
+                top: 0%;
+                left: 100%;
+            }
+        }
+    }
+
+    .why-join {
+        padding: 0 6rem;
+
+        p {
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .join-info {
+            margin-top: 6.5rem;
+        }
+
+        .img-container {
+            margin-bottom: 5.25rem;
+        }
+
+        .num {
+            left: 41.7%;
+            top: 82.9%;
+        }
+    }
+
+    .jobs {
+        margin-top: 7.1rem;
+        text-align: left;
+
+        button {
+            margin: 0 0 0 auto;
+            width: 183px;
+        }
+
+        .job {
+            display: flex;
+            padding: 2.25rem 3.5rem;
+        }
+
+        .position {
+            font-size: 1.5rem;
+            line-height: 28px;
+            letter-spacing: -1.07px;
+        }
     }
 }

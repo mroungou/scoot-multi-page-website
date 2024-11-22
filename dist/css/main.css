@@ -455,6 +455,57 @@
     margin-top: 9rem;
     padding: 0 6rem;
   }
+  .join p {
+    margin: 2.5rem 0;
+  }
+  .join .img-container .img-info {
+    width: 452px;
+    margin: 0 auto;
+  }
+  .join .img-container .pattern {
+    left: -11%;
+    top: 66%;
+  }
+  .join .img-container .pattern-2 {
+    position: absolute;
+    top: 0%;
+    left: 100%;
+  }
+  .why-join {
+    padding: 0 6rem;
+  }
+  .why-join p {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .why-join .join-info {
+    margin-top: 6.5rem;
+  }
+  .why-join .img-container {
+    margin-bottom: 5.25rem;
+  }
+  .why-join .num {
+    left: 41.7%;
+    top: 82.9%;
+  }
+  .jobs {
+    margin-top: 7.1rem;
+    text-align: left;
+  }
+  .jobs button {
+    margin: 0 0 0 auto;
+    width: 183px;
+  }
+  .jobs .job {
+    display: flex;
+    padding: 2.25rem 3.5rem;
+  }
+  .jobs .position {
+    font-size: 1.5rem;
+    line-height: 28px;
+    letter-spacing: -1.07px;
+  }
 }
 .locations-hero {
   background: url("../../assets/images/careers-location-hero-mobile.jpg");
