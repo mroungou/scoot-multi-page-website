@@ -276,11 +276,18 @@
             letter-spacing: -1.07px;
             line-height: 28px;
 
+            &:hover {
+                border: none;
+                color: c.$darkNavy;
+            }
+
             .text {
                 width: auto;
             }
         }
-
+        &:hover {
+            background-color: c.$lightYellow;
+        }
     }
 
     .how-faq .faq:not(:last-child),
@@ -356,8 +363,19 @@
         margin-top: 7.4rem;
         padding: 0 10.3rem;
 
-        .how-faq {
-            display: flex;
+        h4 {
+            text-align: left;
+            margin-bottom: 0;
         }
+
+        .how-faq, .safe-driving {
+            display: grid;
+            column-gap: 1.875rem;
+            grid-template-columns: 1fr 2fr;
+        }
+    }
+
+    .about-page footer {
+        margin-top: 8.25rem;
     }
 }

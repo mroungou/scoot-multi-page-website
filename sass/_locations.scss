@@ -142,3 +142,67 @@
         margin-top: 7.5rem;
     }
 }
+
+@media screen and (min-width: 1440px) {
+    .locations-hero {
+        background: url('../../assets/images/careers-locations-hero-desktop.jpg');
+        padding: 4.48rem 10.3rem;
+
+        .img-container .pattern {
+            right: -17.5%;
+        }
+    }
+
+    .locations {
+        padding: 0 10.3rem;
+
+        h4 {
+            font-size: 1.5rem;
+            margin: 1rem 0;
+        }
+
+        .city {
+            height: 88px;
+            width: 189px;
+        }
+
+        .new-york {
+            top: 58%;
+            left: 77%;
+        }
+
+        .london {
+            top: -3%;
+        }
+
+        .jakarta {
+            top: 261%;
+            left: 410%;
+        }
+
+    }
+
+    .inquiry {
+        display: flex;
+        text-align: left;
+        gap: 1rem;
+        padding: 0 10.3rem;
+        margin-top: 6.5rem;
+        justify-content: space-between;
+
+        h3 {
+            text-transform: none;
+            width: 30%;
+            margin: 0;
+        }
+
+        p {
+            width: 40%;
+            margin: 0;
+        }
+
+        button {
+            margin: auto 0;
+        }
+    }
+}

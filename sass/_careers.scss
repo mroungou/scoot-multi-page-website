@@ -212,3 +212,68 @@
         }
     }
 }
+
+@media screen and (min-width: 1440px) {
+    .careers-hero {
+        background-image: url('../../assets/images/careers-locations-hero-desktop.jpg');
+        padding: 4.48rem 10.3rem;
+
+        .img-container .pattern {
+            right: -17.5%;
+        }
+    }
+
+    .join {
+        padding: 0 10.3rem;
+        display: flex;
+        gap: 5.938rem;
+        text-align: left;
+        align-items: center;
+        margin-top: 7.5rem;
+
+        p {
+            width: 79%;
+        }
+
+        .img-container {
+            order: 1;
+            margin-bottom: 0;
+
+            .pattern {
+                left: -27.8%;
+                top: 65.5%;
+            }
+
+            .pattern-2 {
+                left: 114%;
+            }
+        }
+    }
+
+    .why-join {
+        padding: 0 10.3rem;
+        margin-top: 6.855rem;
+
+        p {
+            width: 100%;
+        }
+
+        .join-info {
+            flex-direction: row;
+            margin-top: 6.4rem;
+            gap: 1rem;
+        }
+    }
+
+    .jobs {
+        padding: 0 10.3rem;
+
+        .job {
+            padding: 2.45rem 2.5rem;
+        }
+    }
+
+    .careers-page footer {
+        margin-top: 10.15rem;
+    }
+}

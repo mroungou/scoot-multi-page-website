@@ -280,8 +280,15 @@
     letter-spacing: -1.07px;
     line-height: 28px;
   }
+  .faq button:hover {
+    border: none;
+    color: rgb(73, 85, 103);
+  }
   .faq button .text {
     width: auto;
+  }
+  .faq:hover {
+    background-color: hsl(39, 100%, 94%);
   }
   .how-faq .faq:not(:last-child),
   .safe-driving .faq:not(:last-child) {
@@ -339,8 +346,18 @@
     margin-top: 7.4rem;
     padding: 0 10.3rem;
   }
-  .faq-section .how-faq {
-    display: flex;
+  .faq-section h4 {
+    text-align: left;
+    margin-bottom: 0;
+  }
+  .faq-section .how-faq, .faq-section .safe-driving {
+    display: grid;
+    -moz-column-gap: 1.875rem;
+         column-gap: 1.875rem;
+    grid-template-columns: 1fr 2fr;
+  }
+  .about-page footer {
+    margin-top: 8.25rem;
   }
 }
 .careers-hero {
@@ -562,6 +579,58 @@
     letter-spacing: -1.07px;
   }
 }
+@media screen and (min-width: 1440px) {
+  .careers-hero {
+    background-image: url("../../assets/images/careers-locations-hero-desktop.jpg");
+    padding: 4.48rem 10.3rem;
+  }
+  .careers-hero .img-container .pattern {
+    right: -17.5%;
+  }
+  .join {
+    padding: 0 10.3rem;
+    display: flex;
+    gap: 5.938rem;
+    text-align: left;
+    align-items: center;
+    margin-top: 7.5rem;
+  }
+  .join p {
+    width: 79%;
+  }
+  .join .img-container {
+    order: 1;
+    margin-bottom: 0;
+  }
+  .join .img-container .pattern {
+    left: -27.8%;
+    top: 65.5%;
+  }
+  .join .img-container .pattern-2 {
+    left: 114%;
+  }
+  .why-join {
+    padding: 0 10.3rem;
+    margin-top: 6.855rem;
+  }
+  .why-join p {
+    width: 100%;
+  }
+  .why-join .join-info {
+    flex-direction: row;
+    margin-top: 6.4rem;
+    gap: 1rem;
+  }
+  .jobs {
+    padding: 0 10.3rem;
+  }
+  .jobs .job {
+    padding: 2.45rem 2.5rem;
+  }
+  .careers-page footer {
+    margin-top: 10.15rem;
+  }
+}
 .locations-hero {
   background: url("../../assets/images/careers-location-hero-mobile.jpg");
   text-align: center;
@@ -709,6 +778,57 @@
     margin-top: 7.5rem;
   }
 }
+@media screen and (min-width: 1440px) {
+  .locations-hero {
+    background: url("../../assets/images/careers-locations-hero-desktop.jpg");
+    padding: 4.48rem 10.3rem;
+  }
+  .locations-hero .img-container .pattern {
+    right: -17.5%;
+  }
+  .locations {
+    padding: 0 10.3rem;
+  }
+  .locations h4 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+  }
+  .locations .city {
+    height: 88px;
+    width: 189px;
+  }
+  .locations .new-york {
+    top: 58%;
+    left: 77%;
+  }
+  .locations .london {
+    top: -3%;
+  }
+  .locations .jakarta {
+    top: 261%;
+    left: 410%;
+  }
+  .inquiry {
+    display: flex;
+    text-align: left;
+    gap: 1rem;
+    padding: 0 10.3rem;
+    margin-top: 6.5rem;
+    justify-content: space-between;
+  }
+  .inquiry h3 {
+    text-transform: none;
+    width: 30%;
+    margin: 0;
+  }
+  .inquiry p {
+    width: 40%;
+    margin: 0;
+  }
+  .inquiry button {
+    margin: auto 0;
+  }
+}
 * {
   margin-block-start: 0;
   margin-block-end: 0;
@@ -789,9 +909,19 @@ nav .menu a, nav .menu a:visited {
   text-decoration: none;
   font-family: "Space Mono", serif;
 }
+nav .menu a:hover, nav .menu a:visited:hover {
+  cursor: pointer;
+  color: rgb(252, 183, 43);
+}
 nav .menu button {
   margin-top: 21.2rem;
   width: 192px;
+}
+nav .menu button:hover {
+  cursor: pointer;
+  background: none;
+  color: rgb(252, 183, 43);
+  border: 3px solid rgb(252, 183, 43);
 }
 
 .hero {
@@ -836,6 +966,12 @@ button {
   font-size: 0.938rem;
   line-height: 25px;
   height: 53px;
+}
+button:hover {
+  cursor: pointer;
+  background: none;
+  color: rgb(252, 183, 43);
+  border: 3px solid rgb(252, 183, 43);
 }
 
 .how {
@@ -993,6 +1129,10 @@ footer .footer-nav .links a, footer .footer-nav .links a:visited {
   font-size: 0.938rem;
   line-height: 25px;
   text-decoration: none;
+}
+footer .footer-nav .links a:hover, footer .footer-nav .links a:visited:hover {
+  cursor: pointer;
+  color: rgb(252, 183, 43);
 }
 footer .footer-nav .socials {
   display: flex;
