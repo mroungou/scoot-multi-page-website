@@ -288,3 +288,76 @@
     margin-bottom: 1.5rem;
     }
 }
+
+@media screen and (min-width: 1440px) {
+    .about-hero {
+        background-image: url('../../assets/images/about-hero-desktop.jpg');
+        padding: 4.48rem 10.3rem;
+
+        .img-container .pattern {
+            right: -17.5%;
+        }
+    }
+
+    .about {
+        margin-top: 7.5rem;
+        padding: 0 10.3rem;
+        row-gap: 7.6rem;
+
+        p {
+            margin: 1.5rem 0 0 !important;
+        }
+    }
+
+    .mobility {
+        .pattern {
+            left: -29.4%;
+        }
+
+        .pattern-2 {
+            left: 114%;
+        }
+    }
+
+    .urban-living {
+        h2 {
+            margin: 0;
+        }
+
+        .pattern {
+            top: -0.3%;
+            left: -58.8%;
+        }
+
+        .pattern-2 {
+            right: 114%;
+        }
+    }
+
+    .values-section {
+        margin-top: 7.5rem;
+        padding: 0 8.5rem;
+
+        p {
+            width: 100%;
+        }
+
+        .value {
+            flex-direction: row;
+            column-gap: 4rem;
+        }
+
+        .num {
+            left: 36.6%;
+        }
+    }
+
+    .faq-section {
+        margin-top: 7.4rem;
+        padding: 0 10.3rem;
+
+        .how-faq {
+            display: flex;
+        }
+    }
+}
