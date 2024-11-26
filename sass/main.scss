@@ -370,7 +370,7 @@ footer {
     .how  {
         text-align: left;
         padding: 0 6rem;
-        row-gap: 2.8rem;
+        gap: 2.8rem;
 
         .steps {
             column-gap: 4.938rem;
@@ -454,12 +454,13 @@ footer {
                 top: 47.5%;
                 right: -21.1%;
             }
+
+            h3 {
+                width: 60%;
+            }
         }
 
 
-        h3 {
-            width: 60%;
-        }
 
         .footer-nav {
             display: flex;
@@ -484,6 +485,184 @@ footer {
             }
         }
     }
+}
+
+@media screen and (min-width: 1440px) {
+    .tablet {
+        display: none;
+    }
+
+    .desktop {
+        display: block;
+    }
+
+    header {
+        padding: 1.345rem 10.5rem;
+    }
+
+    .hero {
+        background: url('../../assets/images/home-hero-desktop.jpg');
+        text-align: left;
+        padding: 9.5rem 10.4rem 10rem;
+
+        h1 {
+            width: 50%;
+        }
+
+        p {
+            width: 36%;
+            margin: 2rem 6rem 2.5rem;
+        }
+
+        button {
+            margin-left: 6rem;
+        }
+
+        .pattern-hero {
+            left: 49%;
+            top: 53.6%;
+        }
+
+        .pattern2-hero {
+            bottom: 24.8%;
+            left: 87.1%;
+        }
+
+        .pattern3-hero {
+            position: absolute;
+            top: 53.6%;
+            left: 0;
+        }
+    }
+
+    .how {
+        flex-direction: row;
+        margin-top: 10rem;
+        padding: 0 10.3rem;
+
+        img {
+            margin-bottom: 2.5rem;
+        }
+
+        .steps {
+            flex-direction: column;
+        }
+    }
+
+    .information {
+        padding: 0 10.3rem;
+        margin-top: 12.85rem;
+        gap: 10rem;
+    }
+
+    .info {
+        display: flex;
+        text-align: left;
+        justify-content: space-between;
+        gap: 5.938rem;
+        height: fit-content;
+
+        h3 {
+            margin: 0;
+            width: 100%;
+        }
+
+        p {
+
+        }
+
+        &:nth-child(2n + 1){
+            flex-direction: row-reverse;
+        }
+
+        .text {
+            width: 40%;
+            margin: auto 0;
+        }
+
+        .img-container {
+            margin-bottom: 0;
+        }
+    }
+
+    .telemetry {
+        .pattern {
+            top: 66.4%;
+            left: -29.7%;
+        }
+
+        .pattern-2 {
+            right: -114.4%;
+        }
+    }
+
+    .city .img-container{
+        .pattern {
+            top: -1.1%;
+            right: 57.2%;
+        }
+
+        .pattern-2 {
+            right: 114.7%;
+        }
+    }
+
+    .payments .img-container {
+        .pattern {
+            top: 15.4%;
+            left: 56%;
+        }
+
+        .pattern-2 {
+            right: -114.4%;
+        }
+    }
+
+    footer {
+        margin-top: 11.75rem;
+        .sign-up {
+            display: flex;
+            padding: 6.3rem 10.3rem 6.6rem;
+            justify-content: space-between;
+
+            h3 {
+                margin: 0;
+                width: 40%;
+                text-align: left;
+            }
+
+            .pattern {
+                right: -11.1%;
+            }
+
+            .stores {
+                align-items: center;
+                .app-store img {
+                    width: 159px;
+                    height: 56px;
+                }
+
+                .play-store img {
+                    width: 182px;
+                    height: 56px;
+                }
+            }
+        }
+
+
+        .footer-nav {
+            padding: 2.1rem 10.3rem 1.65rem;
+
+            .links {
+                margin: auto auto auto 4rem;
+
+                ul {
+                    gap: 2rem;
+                }
+            }
+        }
+    }
+
 }
 
 
