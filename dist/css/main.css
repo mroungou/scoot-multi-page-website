@@ -200,11 +200,11 @@
     text-align: left;
     padding: 4.48rem 6rem;
   }
-  .about-hero .img-container {
+  .about-hero .img-container-hero {
     position: relative;
     margin-bottom: 0;
   }
-  .about-hero .img-container .pattern {
+  .about-hero .img-container-hero .pattern {
     position: absolute;
     bottom: 0%;
     right: -22%;
@@ -300,7 +300,7 @@
     background-image: url("../../assets/images/about-hero-desktop.jpg");
     padding: 4.48rem 10.3rem;
   }
-  .about-hero .img-container .pattern {
+  .about-hero .img-container-hero .pattern {
     right: -17.5%;
   }
   .about {
@@ -514,11 +514,11 @@
     text-align: left;
     padding: 4.48rem 6rem;
   }
-  .careers-hero .img-container {
+  .careers-hero .img-container-hero {
     position: relative;
     margin-bottom: 0;
   }
-  .careers-hero .img-container .pattern {
+  .careers-hero .img-container-hero .pattern {
     position: absolute;
     bottom: 0%;
     right: -22%;
@@ -584,7 +584,7 @@
     background-image: url("../../assets/images/careers-locations-hero-desktop.jpg");
     padding: 4.48rem 10.3rem;
   }
-  .careers-hero .img-container .pattern {
+  .careers-hero .img-container-hero .pattern {
     right: -17.5%;
   }
   .join {
@@ -716,11 +716,11 @@
     text-align: left;
     padding: 4.48rem 6rem;
   }
-  .locations-hero .img-container {
+  .locations-hero .img-container-hero {
     position: relative;
     margin-bottom: 0;
   }
-  .locations-hero .img-container .pattern {
+  .locations-hero .img-container-hero .pattern {
     position: absolute;
     bottom: 0%;
     right: -22%;
@@ -783,7 +783,7 @@
     background: url("../../assets/images/careers-locations-hero-desktop.jpg");
     padding: 4.48rem 10.3rem;
   }
-  .locations-hero .img-container .pattern {
+  .locations-hero .img-container-hero .pattern {
     right: -17.5%;
   }
   .locations {
